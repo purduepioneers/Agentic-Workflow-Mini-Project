@@ -40,3 +40,20 @@ Build a three agent workflow that takes a user query, researches it and stores t
     UI <-->|approve or reject| DB
     DB -.status per agent.-> LOG[[agent_runs log<br/>pending, running, awaiting_approval, done, failed]]
     LOG -.failed.-> STOP{{Stop workflow and report error}}
+
+
+## Environment Setup
+
+1. Clone the repository.
+2. Copy `.env.example` to `.env`:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+3. Get the required API keys from the team's secure shared vault.
+4. Add the credentials to your local `.env` file.
+5. Never commit `.env` or share API keys publicly.
+
+The `.gitignore` file prevents Git from tracking local `.env` files.
+
