@@ -57,3 +57,7 @@ Build a three agent workflow that takes a user query, researches it and stores t
 
 The `.gitignore` file prevents Git from tracking local `.env` files.
 
+
+## Workflow Console
+
+The Next.js app in [web/](web/) accepts research queries and displays the agent runs for the selected query. See the [console setup and Vercel deployment guide](web/README.md).
